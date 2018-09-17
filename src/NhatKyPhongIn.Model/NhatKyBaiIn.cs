@@ -12,11 +12,12 @@ namespace NhatKyPhongIn.Model
         public ThoIn NguoiIn { get; set; }
         public MayIn ChoMayIn { get; set; }
         public List<BaiIn> GomBaiIn = new List<BaiIn>();
+        public int TongSoClickChay { get; set; }
+        public string DonViTinhClick { get; set; }
 
-SoClickDaIn(integer)
-GomSoTrangThu(integer)
-GomSoTrangHong(Integer)
-ThoiGianLapPhieu(DateTime)
-ThoiGianInXong(DateTime)
+        public double GomSoClickThu { get; set; }
+        public double GomSoClickHu { get; set; }
+        public DateTime ThoiGianLapPhieu { get; set; }//lấy từ hệ thống
+        public DateTime ThoiGianInXong { get; set; }
     }
 }
