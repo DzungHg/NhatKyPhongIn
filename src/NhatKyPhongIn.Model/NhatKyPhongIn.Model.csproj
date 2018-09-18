@@ -57,21 +57,7 @@
     <Compile Include="BaiIn.cs" />
     <Compile Include="MayIn.cs" />
     <Compile Include="NhatKyBaiIn.cs" />
-    <Compile Include="NhatKyNgay.cs" />
-    <Compile Include="NhatKyPhongIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaoNhatKyKyForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaoNhatKyKyForm.Designer.cs">
-      <DependentUpon>TaoNhatKyKyForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TaoNhatKyNgayForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TaoNhatKyNgayForm.Designer.cs">
-      <DependentUpon>TaoNhatKyNgayForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThoIn.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,12 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="TaoNhatKyKyForm.resx">
-      <DependentUpon>TaoNhatKyKyForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TaoNhatKyNgayForm.resx">
-      <DependentUpon>TaoNhatKyNgayForm.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
