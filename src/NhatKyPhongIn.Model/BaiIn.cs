@@ -20,6 +20,9 @@ namespace NhatKyPhongIn.Model
         public int SoLuongToChayBuHao { get; set; }
         public int SoMatIn { get; set; }
         public MauIn MauIn { get; set; }
+        public double SoClickCanIn { get; set; }
+        public DonViTinhClick DonViTinhClick { get; set; }
+
         public MucUuTien MucUuTien { get; set; }
         public string DuongDanFile { get; set; }
         public TinhTrangBaiIn TinhTrangBaiIn { get; set; }
