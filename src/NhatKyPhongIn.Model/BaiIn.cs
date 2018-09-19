@@ -24,7 +24,7 @@ namespace NhatKyPhongIn.Model
         public DonViTinhClick DonViTinhClick { get; set; }
 
         public MucUuTien MucUuTien { get; set; }
-        public string DuongDanFile { get; set; }
+        public string DuongDanFileIn { get; set; }
         public TinhTrangBaiIn TinhTrangBaiIn { get; set; }
 
     }
