@@ -44,6 +44,7 @@
     <Compile Include="Enums\MauIn.cs" />
     <Compile Include="Enums\MucUuTien.cs" />
     <Compile Include="Enums\TinhTrangBaiIn.cs" />
+    <Compile Include="Enums\TinhTrangBaiSanPham.cs" />
     <Compile Include="Enums\TinhTrangNhatKy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

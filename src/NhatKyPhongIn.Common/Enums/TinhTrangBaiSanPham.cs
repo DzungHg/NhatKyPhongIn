@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace NhatKyPhongIn.Common.Enums
 {
-    public enum TinhTrangBaiIn
+    public enum TinhTrangBaiSanPham
     {
-        Moi = 0,
-        DangLamFile =1,
-        SanSangIn = 2,
-        DangIn = 2,
-        HoanThanh = 3,
+        Nhap = 0,
+        DangHopChuan = 1,
+        SanSangKyThuat = 2,
+        DaDuaVoSanXuat = 3,
         DeNghiHuy = 98,
-        Huy = 99
+        DaHuy = 99
     }
 }

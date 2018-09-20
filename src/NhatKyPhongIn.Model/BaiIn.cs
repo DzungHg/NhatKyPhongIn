@@ -9,7 +9,6 @@ namespace NhatKyPhongIn.Model
 {
     public class BaiIn
     {
-        public string SoDonHang { get; set; }
         public string TenBaiIn { get; set; }
         public string NguoiLamFile { get; set; }
         public string DienGiaiIn { get; set; }
@@ -27,6 +26,7 @@ namespace NhatKyPhongIn.Model
         public MucUuTien MucUuTien { get; set; }
         public string DuongDanFileIn { get; set; }
         public TinhTrangBaiIn TinhTrangBaiIn { get; set; }
+        public  int IdBaiSanPham { get; set; }
 
     }
 }

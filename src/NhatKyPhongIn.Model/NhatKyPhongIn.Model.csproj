@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaiIn.cs" />
+    <Compile Include="BaiSanPham.cs" />
     <Compile Include="MayIn.cs" />
     <Compile Include="NhatKyBaiIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
