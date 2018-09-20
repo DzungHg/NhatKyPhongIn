@@ -41,14 +41,16 @@
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.tenUserRLabel = new Telerik.WinControls.UI.RadLabel();
             this.menuTopRMenu = new Telerik.WinControls.UI.RadMenu();
+            this.QuanLyBaiSanPharmRButton = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongInRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyBaiInRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tenUserRLabel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuTopRMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyBaiSanPharmRButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -99,13 +101,13 @@
             // 
             this.dangNhapRButton.Location = new System.Drawing.Point(12, 26);
             this.dangNhapRButton.Name = "dangNhapRButton";
-            this.dangNhapRButton.Size = new System.Drawing.Size(110, 39);
+            this.dangNhapRButton.Size = new System.Drawing.Size(110, 84);
             this.dangNhapRButton.TabIndex = 1;
             this.dangNhapRButton.Text = "Đăng nhập";
             // 
             // phongInRButton
             // 
-            this.phongInRButton.Location = new System.Drawing.Point(128, 26);
+            this.phongInRButton.Location = new System.Drawing.Point(244, 26);
             this.phongInRButton.Name = "phongInRButton";
             this.phongInRButton.Size = new System.Drawing.Size(110, 39);
             this.phongInRButton.TabIndex = 2;
@@ -113,7 +115,7 @@
             // 
             // quanLyBaiInRButton
             // 
-            this.quanLyBaiInRButton.Location = new System.Drawing.Point(244, 26);
+            this.quanLyBaiInRButton.Location = new System.Drawing.Point(128, 71);
             this.quanLyBaiInRButton.Name = "quanLyBaiInRButton";
             this.quanLyBaiInRButton.Size = new System.Drawing.Size(110, 39);
             this.quanLyBaiInRButton.TabIndex = 3;
@@ -123,9 +125,9 @@
             // 
             this.radPanel1.Controls.Add(this.tenUserRLabel);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.radPanel1.Location = new System.Drawing.Point(0, 71);
+            this.radPanel1.Location = new System.Drawing.Point(0, 123);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(386, 33);
+            this.radPanel1.Size = new System.Drawing.Size(365, 33);
             this.radPanel1.TabIndex = 4;
             // 
             // tenUserRLabel
@@ -136,12 +138,6 @@
             this.tenUserRLabel.TabIndex = 0;
             this.tenUserRLabel.Text = "Tên User";
             // 
-            // NavForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 104);
-            // 
             // menuTopRMenu
             // 
             this.menuTopRMenu.Items.AddRange(new Telerik.WinControls.RadItem[] {
@@ -150,8 +146,24 @@
             this.radMenuItem3});
             this.menuTopRMenu.Location = new System.Drawing.Point(0, 0);
             this.menuTopRMenu.Name = "menuTopRMenu";
-            this.menuTopRMenu.Size = new System.Drawing.Size(386, 20);
+            this.menuTopRMenu.Size = new System.Drawing.Size(365, 20);
             this.menuTopRMenu.TabIndex = 0;
+            // 
+            // QuanLyBaiSanPharmRButton
+            // 
+            this.QuanLyBaiSanPharmRButton.Location = new System.Drawing.Point(128, 26);
+            this.QuanLyBaiSanPharmRButton.Name = "QuanLyBaiSanPharmRButton";
+            this.QuanLyBaiSanPharmRButton.Size = new System.Drawing.Size(110, 39);
+            this.QuanLyBaiSanPharmRButton.TabIndex = 4;
+            this.QuanLyBaiSanPharmRButton.Text = "Quản lý Bài SP";
+            this.QuanLyBaiSanPharmRButton.Click += new System.EventHandler(this.QuanLyBaiSanPharmRButton_Click);
+            // 
+            // NavForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(365, 156);
+            this.Controls.Add(this.QuanLyBaiSanPharmRButton);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.quanLyBaiInRButton);
             this.Controls.Add(this.phongInRButton);
@@ -171,6 +183,7 @@
             this.radPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tenUserRLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuTopRMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuanLyBaiSanPharmRButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,5 +204,6 @@
         private Telerik.WinControls.UI.RadMenu menuTopRMenu;
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadLabel tenUserRLabel;
+        private Telerik.WinControls.UI.RadButton QuanLyBaiSanPharmRButton;
     }
 }

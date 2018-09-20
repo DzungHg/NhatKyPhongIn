@@ -1,0 +1,5 @@
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.BDO\bin\Debug\NhatKyPhongIn.BDO.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.BDO\bin\Debug\NhatKyPhongIn.BDO.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.BDO\obj\Debug\NhatKyPhongIn.BDO.csprojResolveAssemblyReference.cache
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.BDO\obj\Debug\NhatKyPhongIn.BDO.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.BDO\obj\Debug\NhatKyPhongIn.BDO.pdb

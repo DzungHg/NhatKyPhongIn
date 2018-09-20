@@ -1,0 +1,5 @@
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Logic\bin\Debug\NhatKyPhongIn.Logic.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Logic\bin\Debug\NhatKyPhongIn.Logic.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Logic\obj\Debug\NhatKyPhongIn.Logic.csprojResolveAssemblyReference.cache
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Logic\obj\Debug\NhatKyPhongIn.Logic.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Logic\obj\Debug\NhatKyPhongIn.Logic.pdb

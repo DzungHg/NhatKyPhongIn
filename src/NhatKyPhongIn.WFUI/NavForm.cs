@@ -30,5 +30,12 @@ namespace NhatKyPhongIn.WFUI
         {
 
         }
+
+        private void QuanLyBaiSanPharmRButton_Click(object sender, EventArgs e)
+        {
+            BangDieuKhienBaiSanPhamForm frm = new BangDieuKhienBaiSanPhamForm();
+            frm.ShowDialog();
+
+        }
     }
 }

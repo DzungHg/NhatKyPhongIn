@@ -1,0 +1,5 @@
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\bin\Debug\NhatKyPhongIn.Common.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\bin\Debug\NhatKyPhongIn.Common.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.csprojResolveAssemblyReference.cache
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.pdb

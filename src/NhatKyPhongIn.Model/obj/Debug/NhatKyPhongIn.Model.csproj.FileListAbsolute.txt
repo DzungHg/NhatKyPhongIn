@@ -1,0 +1,13 @@
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Model.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Model.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Common.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.UI.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\TelerikCommon.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Common.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.xml
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.UI.xml
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.csprojResolveAssemblyReference.cache
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll.licenses
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.pdb
