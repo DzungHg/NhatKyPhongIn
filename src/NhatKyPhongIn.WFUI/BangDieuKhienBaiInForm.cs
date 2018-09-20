@@ -9,9 +9,9 @@ using Telerik.WinControls;
 
 namespace NhatKyPhongIn.WFUI
 {
-    public partial class QuanLyNhatKyKyForm : Telerik.WinControls.UI.RadForm
+    public partial class BangDieuKhienBaiInForm : Telerik.WinControls.UI.RadForm
     {
-        public QuanLyNhatKyKyForm()
+        public BangDieuKhienBaiInForm()
         {
             InitializeComponent();
         }

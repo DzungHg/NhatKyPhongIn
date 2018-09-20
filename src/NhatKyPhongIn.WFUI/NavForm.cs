@@ -25,5 +25,10 @@ namespace NhatKyPhongIn.WFUI
         {
 
         }
+
+        private void baiInRMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace NhatKyPhongIn.Model
         public string NguoiLamFile { get; set; }
         public string DienGiaiIn { get; set; }
         public MayIn MayInYeuCau { get; set; }
+        public string TenGiayIn { get; set; }
         public double ToChayRong { get; set; }
         public double ToChayDai { get; set; }
         public int SoLuongToChayCanIn { get; set; }

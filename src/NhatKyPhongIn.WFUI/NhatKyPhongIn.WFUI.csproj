@@ -47,6 +47,7 @@
       <HintPath>..\lib\RCWF\2018.3.911.40\Telerik.WinControls.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2018.3.911.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2018.3.911.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
       <HintPath>..\lib\RCWF\2018.3.911.40\Telerik.WinControls.UI.dll</HintPath>
       <Private>True</Private>
@@ -57,18 +58,48 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BangDieuKhienBaiInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BangDieuKhienBaiInForm.Designer.cs">
+      <DependentUpon>BangDieuKhienBaiInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangDieuKhienMayInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BangDieuKhienMayInForm.Designer.cs">
+      <DependentUpon>BangDieuKhienMayInForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="NavForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NavForm.Designer.cs">
       <DependentUpon>NavForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyNhatKyKyForm.cs">
+    <Compile Include="TaoBaiInForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyNhatKyKyForm.Designer.cs">
-      <DependentUpon>QuanLyNhatKyKyForm.cs</DependentUpon>
+    <Compile Include="TaoBaiInForm.Designer.cs">
+      <DependentUpon>TaoBaiInForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaoNhatKyBaiInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoNhatKyBaiInForm.Designer.cs">
+      <DependentUpon>TaoNhatKyBaiInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoPhongInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoPhongInForm.Designer.cs">
+      <DependentUpon>VoPhongInForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BangDieuKhienBaiInForm.resx">
+      <DependentUpon>BangDieuKhienBaiInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangDieuKhienMayInForm.resx">
+      <DependentUpon>BangDieuKhienMayInForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NavForm.resx">
       <DependentUpon>NavForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,8 +115,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuanLyNhatKyKyForm.resx">
-      <DependentUpon>QuanLyNhatKyKyForm.cs</DependentUpon>
+    <EmbeddedResource Include="TaoBaiInForm.resx">
+      <DependentUpon>TaoBaiInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoNhatKyBaiInForm.resx">
+      <DependentUpon>TaoNhatKyBaiInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoPhongInForm.resx">
+      <DependentUpon>VoPhongInForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
