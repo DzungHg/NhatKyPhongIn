@@ -3,3 +3,8 @@ F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\bin\Debug\NhatKyPhongIn.Commo
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.csprojResolveAssemblyReference.cache
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.dll
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.pdb
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\bin\Debug\NhatKyPhongIn.Common.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\bin\Debug\NhatKyPhongIn.Common.pdb
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.csprojResolveAssemblyReference.cache
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Common\obj\Debug\NhatKyPhongIn.Common.pdb

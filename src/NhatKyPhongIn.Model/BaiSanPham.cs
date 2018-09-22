@@ -15,6 +15,7 @@ namespace NhatKyPhongIn.Model
         public string DuongDanFile01 { get; set; }
         public string DuongDanFile02 { get; set; }
         public string DuongDanFile03 { get; set; }
+        public DateTime ThoiHan { get; set; }
         public TinhTrangBaiSanPham TinhTrangBaiSanPham { get; set; }
 
 

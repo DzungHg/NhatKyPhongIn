@@ -40,8 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaiSanPhamDAO.cs" />
     <Compile Include="IDataConnection.cs" />
+    <Compile Include="IReposNhatKyPhongIn\IBaiSanPhamDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NhatKyPhongIn.BDO\NhatKyPhongIn.BDO.csproj">
+      <Project>{c5cc72e5-7660-440b-b642-f926c1876cdf}</Project>
+      <Name>NhatKyPhongIn.BDO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

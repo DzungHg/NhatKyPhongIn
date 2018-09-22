@@ -127,6 +127,7 @@
             this.taoBaiSanPhamRButton.Size = new System.Drawing.Size(110, 24);
             this.taoBaiSanPhamRButton.TabIndex = 10;
             this.taoBaiSanPhamRButton.Text = "Tạo Bài Sản Phẩm";
+            this.taoBaiSanPhamRButton.Click += new System.EventHandler(this.taoBaiSanPhamRButton_Click);
             // 
             // titleRLabel
             // 

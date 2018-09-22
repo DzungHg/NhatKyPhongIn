@@ -45,6 +45,8 @@
             this.duongDanFile02RTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel5 = new Telerik.WinControls.UI.RadLabel();
             this.duongDanFile03RTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
+            this.thoiHanRDateTime = new Telerik.WinControls.UI.RadDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenBaiInRTextBox)).BeginInit();
@@ -62,6 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFile02RTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFile03RTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thoiHanRDateTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,11 +200,31 @@
             this.duongDanFile03RTextBox.Size = new System.Drawing.Size(301, 37);
             this.duongDanFile03RTextBox.TabIndex = 7;
             // 
+            // radLabel15
+            // 
+            this.radLabel15.Location = new System.Drawing.Point(348, 266);
+            this.radLabel15.Name = "radLabel15";
+            this.radLabel15.Size = new System.Drawing.Size(50, 18);
+            this.radLabel15.TabIndex = 52;
+            this.radLabel15.Text = "Thời hạn";
+            // 
+            // thoiHanRDateTime
+            // 
+            this.thoiHanRDateTime.Location = new System.Drawing.Point(351, 288);
+            this.thoiHanRDateTime.Name = "thoiHanRDateTime";
+            this.thoiHanRDateTime.Size = new System.Drawing.Size(164, 20);
+            this.thoiHanRDateTime.TabIndex = 53;
+            this.thoiHanRDateTime.TabStop = false;
+            this.thoiHanRDateTime.Text = "Saturday, September 22, 2018";
+            this.thoiHanRDateTime.Value = new System.DateTime(2018, 9, 22, 14, 20, 5, 139);
+            // 
             // TaoBaiSanPhamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 426);
+            this.Controls.Add(this.thoiHanRDateTime);
+            this.Controls.Add(this.radLabel15);
             this.Controls.Add(this.radLabel5);
             this.Controls.Add(this.duongDanFile03RTextBox);
             this.Controls.Add(this.radLabel4);
@@ -241,6 +265,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFile02RTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFile03RTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thoiHanRDateTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -266,5 +292,7 @@
         private Telerik.WinControls.UI.RadTextBoxControl duongDanFile02RTextBox;
         private Telerik.WinControls.UI.RadLabel radLabel5;
         private Telerik.WinControls.UI.RadTextBoxControl duongDanFile03RTextBox;
+        private Telerik.WinControls.UI.RadLabel radLabel15;
+        private Telerik.WinControls.UI.RadDateTimePicker thoiHanRDateTime;
     }
 }

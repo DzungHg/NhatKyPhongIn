@@ -11,3 +11,16 @@ F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll.licenses
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.pdb
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Model.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Model.pdb
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Common.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.UI.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\TelerikCommon.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\NhatKyPhongIn.Common.pdb
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.xml
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\bin\Debug\Telerik.WinControls.UI.xml
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.csprojResolveAssemblyReference.cache
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll.licenses
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.dll
+D:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.Model\obj\Debug\NhatKyPhongIn.Model.pdb

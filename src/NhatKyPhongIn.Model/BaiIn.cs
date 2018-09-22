@@ -26,6 +26,7 @@ namespace NhatKyPhongIn.Model
         public MucUuTien MucUuTien { get; set; }
         public string DuongDanFileIn { get; set; }
         public TinhTrangBaiIn TinhTrangBaiIn { get; set; }
+        public DateTime ThoiHanInXong { get; set; }
         public  int IdBaiSanPham { get; set; }
 
     }
