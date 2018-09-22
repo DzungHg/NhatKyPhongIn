@@ -169,6 +169,8 @@
             this.Controls.Add(this.phongInRButton);
             this.Controls.Add(this.dangNhapRButton);
             this.Controls.Add(this.menuTopRMenu);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "NavForm";
             // 
             // 
