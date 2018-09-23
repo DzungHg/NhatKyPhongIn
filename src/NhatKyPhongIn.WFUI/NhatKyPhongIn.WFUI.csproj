@@ -52,8 +52,17 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -98,6 +107,15 @@
     <Compile Include="BangDieuKhienMayInForm.Designer.cs">
       <DependentUpon>BangDieuKhienMayInForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTOContext\BaiSanPham.cs" />
+    <Compile Include="DTOContext\IBaiSanPham.cs" />
+    <Compile Include="MapProfile\BaiSanPhamBDOBaiSanPhamModelProfile.cs" />
+    <Compile Include="MapProfile\BaiSanPhamModelBaiSanPhamBDOProfile.cs" />
+    <Compile Include="Model\BaiInModel.cs" />
+    <Compile Include="Model\BaiSanPhamModel.cs" />
+    <Compile Include="Model\MayInModel.cs" />
+    <Compile Include="Model\NhatKyBaiInModel.cs" />
+    <Compile Include="Model\ThoInModel.cs" />
     <Compile Include="NavForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +183,7 @@
     <EmbeddedResource Include="VoPhongInForm.resx">
       <DependentUpon>VoPhongInForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,13 +198,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <!--sirinie -->
-    <ProjectReference Include="..\NhatKyPhongIn.Model\NhatKyPhongIn.Model.csproj">
-      <Project>{4b5248fb-9654-4048-a2c3-94ddbc7708be}</Project>
-      <Name>NhatKyPhongIn.Model</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -196,6 +208,20 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NhatKyPhongIn.BDO\NhatKyPhongIn.BDO.csproj">
+      <Project>{c5cc72e5-7660-440b-b642-f926c1876cdf}</Project>
+      <Name>NhatKyPhongIn.BDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NhatKyPhongIn.Common\NhatKyPhongIn.Common.csproj">
+      <Project>{37df15e9-bbdf-4f4c-8601-3fba7cbe0dd2}</Project>
+      <Name>NhatKyPhongIn.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NhatKyPhongIn.Logic\NhatKyPhongIn.Logic.csproj">
+      <Project>{d049c952-4e16-4363-9572-a6338986bec5}</Project>
+      <Name>NhatKyPhongIn.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

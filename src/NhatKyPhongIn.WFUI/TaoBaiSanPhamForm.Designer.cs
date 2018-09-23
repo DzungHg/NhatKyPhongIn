@@ -164,6 +164,7 @@
             // 
             // cancelFormRButton
             // 
+            this.cancelFormRButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelFormRButton.Location = new System.Drawing.Point(210, 385);
             this.cancelFormRButton.Name = "cancelFormRButton";
             this.cancelFormRButton.Size = new System.Drawing.Size(110, 24);

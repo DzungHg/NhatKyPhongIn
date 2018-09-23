@@ -3,19 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using Dapper;
 using NhatKyPhongIn.BDO;
 using NhatKyPhongIn.DAL.IReposNhatKyPhongIn;
+using NhatKyPhongIn.Common;
 
 namespace NhatKyPhongIn.DAL
 {
+ 
+
     public class BaiSanPhamDAO : IBaiSanPhamDAO
     {
-        public IEnumerable<BaiSanPhamBDO> LayTatCa()
+        const string tenDB = "NhatKyPhongIn";
+        public IEnumerable<BaiSanPhamBDO> DocTatCa()
         {
-            throw new NotImplementedException();
+            IEnumerable<BaiSanPhamBDO> output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(tenDB)))
+            {
+                output = connection.Query<BaiSanPhamBDO>("dbo.spBaiSanPham_DocTatCa");
+                return output;
+            }
         }
 
-        public BaiSanPhamBDO LayTheoId(int iD)
+        public BaiSanPhamBDO DocTheoId(int iD)
         {
             throw new NotImplementedException();
         }
@@ -27,7 +38,25 @@ namespace NhatKyPhongIn.DAL
 
         public void Them(BaiSanPhamBDO entityBDO)
         {
-            throw new NotImplementedException();
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(tenDB)))
+            {
+                var p = new DynamicParameters(); //Của dapper
+                p.Add("@SoDonHang", entityBDO.SoDonHang);
+                p.Add("@TenSanPham", entityBDO.TenSanPham);
+                p.Add("@YeuCau", entityBDO.YeuCau);
+                p.Add("@DuongDanFile01", entityBDO.DuongDanFile01);
+                p.Add("@DuongDanFile02", entityBDO.DuongDanFile02);
+                p.Add("@DuongDanFile03", entityBDO.DuongDanFile03);
+                p.Add("@TinhTrangBaiSanPham", entityBDO.TinhTrangBaiSanPham);
+                p.Add("@ThoiHan", entityBDO.ThoiHan);
+                p.Add("@id", dbType: DbType.Int32, direction: ParameterDirection.Output);
+                //Excecute
+                connection.Execute("dbo.spBaiSanPham_Them", p, commandType: CommandType.StoredProcedure);
+                //xử lý id out
+                entityBDO.Id = p.Get<int>("@id");
+                ///nếu cần có thể
+                ///đặt return ở đay cũng được
+            }
         }
 
         public void Xoa(int iD)

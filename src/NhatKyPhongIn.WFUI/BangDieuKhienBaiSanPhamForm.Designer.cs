@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
+            this.radSplitCont1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.locBaiSanPhamDataFilter = new Telerik.WinControls.UI.RadDataFilter();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
@@ -38,8 +38,8 @@
             this.titleRLabel = new Telerik.WinControls.UI.RadLabel();
             this.suaBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
             this.dongFormRButton = new Telerik.WinControls.UI.RadButton();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
-            this.radSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radSplitCont1)).BeginInit();
+            this.radSplitCont1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.locBaiSanPhamDataFilter)).BeginInit();
@@ -54,19 +54,19 @@
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
-            // radSplitContainer1
+            // radSplitCont1
             // 
-            this.radSplitContainer1.Controls.Add(this.splitPanel1);
-            this.radSplitContainer1.Controls.Add(this.splitPanel2);
-            this.radSplitContainer1.Location = new System.Drawing.Point(9, 72);
-            this.radSplitContainer1.Name = "radSplitContainer1";
+            this.radSplitCont1.Controls.Add(this.splitPanel1);
+            this.radSplitCont1.Controls.Add(this.splitPanel2);
+            this.radSplitCont1.Location = new System.Drawing.Point(9, 72);
+            this.radSplitCont1.Name = "radSplitCont1";
             // 
             // 
             // 
-            this.radSplitContainer1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitContainer1.Size = new System.Drawing.Size(625, 366);
-            this.radSplitContainer1.TabIndex = 4;
-            this.radSplitContainer1.TabStop = false;
+            this.radSplitCont1.RootElement.MinSize = new System.Drawing.Size(25, 25);
+            this.radSplitCont1.Size = new System.Drawing.Size(625, 366);
+            this.radSplitCont1.TabIndex = 4;
+            this.radSplitCont1.TabStop = false;
             // 
             // splitPanel1
             // 
@@ -107,6 +107,7 @@
             this.splitPanel2.TabIndex = 1;
             this.splitPanel2.TabStop = false;
             this.splitPanel2.Text = "splitPanel2";
+            this.splitPanel2.Resize += new System.EventHandler(this.splitPanel2_Resize);
             // 
             // baiSanPhamRGridView
             // 
@@ -117,8 +118,10 @@
             // 
             this.baiSanPhamRGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.baiSanPhamRGridView.Name = "baiSanPhamRGridView";
+            this.baiSanPhamRGridView.ReadOnly = true;
             this.baiSanPhamRGridView.Size = new System.Drawing.Size(380, 366);
             this.baiSanPhamRGridView.TabIndex = 2;
+            this.baiSanPhamRGridView.CreateRow += new Telerik.WinControls.UI.GridViewCreateRowEventHandler(this.baiSanPhamRGridView_CreateRow);
             // 
             // taoBaiSanPhamRButton
             // 
@@ -132,7 +135,7 @@
             // titleRLabel
             // 
             this.titleRLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleRLabel.Location = new System.Drawing.Point(200, 6);
+            this.titleRLabel.Location = new System.Drawing.Point(168, 6);
             this.titleRLabel.Name = "titleRLabel";
             this.titleRLabel.Size = new System.Drawing.Size(317, 30);
             this.titleRLabel.TabIndex = 11;
@@ -163,15 +166,17 @@
             this.Controls.Add(this.suaBaiSanPhamRButton);
             this.Controls.Add(this.titleRLabel);
             this.Controls.Add(this.taoBaiSanPhamRButton);
-            this.Controls.Add(this.radSplitContainer1);
+            this.Controls.Add(this.radSplitCont1);
             this.Name = "BangDieuKhienBaiSanPhamForm";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Bảng Điều Khiển Bài In";
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();
-            this.radSplitContainer1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.BangDieuKhienBaiSanPhamForm_Load);
+            this.Resize += new System.EventHandler(this.BangDieuKhienBaiSanPhamForm_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.radSplitCont1)).EndInit();
+            this.radSplitCont1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
             this.splitPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.locBaiSanPhamDataFilter)).EndInit();
@@ -191,7 +196,7 @@
 
         #endregion
 
-        private Telerik.WinControls.UI.RadSplitContainer radSplitContainer1;
+        private Telerik.WinControls.UI.RadSplitContainer radSplitCont1;
         private Telerik.WinControls.UI.SplitPanel splitPanel1;
         private Telerik.WinControls.UI.RadDataFilter locBaiSanPhamDataFilter;
         private Telerik.WinControls.UI.SplitPanel splitPanel2;

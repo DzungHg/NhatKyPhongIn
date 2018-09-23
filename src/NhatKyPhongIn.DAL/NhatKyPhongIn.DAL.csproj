@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\lib\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,6 +54,13 @@
       <Project>{c5cc72e5-7660-440b-b642-f926c1876cdf}</Project>
       <Name>NhatKyPhongIn.BDO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NhatKyPhongIn.Common\NhatKyPhongIn.Common.csproj">
+      <Project>{37df15e9-bbdf-4f4c-8601-3fba7cbe0dd2}</Project>
+      <Name>NhatKyPhongIn.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,34 +6,52 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls;
-using NhatKyPhongIn.Model;
+using NhatKyPhongIn.Common.Enums;
+using NhatKyPhongIn.WFUI.Model;
+using NhatKyPhongIn.WFUI.DTOContext;
 
 namespace NhatKyPhongIn.WFUI
 {
     public partial class TaoBaiSanPhamForm : Telerik.WinControls.UI.RadForm
     {
+       
         public TaoBaiSanPhamForm()
         {
             InitializeComponent();
+
+            InitializeFormData();
+            //Đặt Cb
+            tinhTrangBaiSPDropDownList.SelectedIndex = 0;//Đầu tiên "Nhap"
+            //Lock cboTinhTrang
+            tinhTrangBaiSPDropDownList.Enabled = false;
         }
+        private void InitializeFormData()
+        {
+            //Bind the account level settings
+            foreach (TinhTrangBaiSanPham tinhTrang in Enum.GetValues(typeof(TinhTrangBaiSanPham)))
+            {
+                tinhTrangBaiSPDropDownList.Items.Add(tinhTrang.ToString());
+            }
+        }
+        
         private bool ValidateForm()
         {
             bool output = true;
 
-            if (soDonHangRTextBox.Text.Length <= 0)
+            if (string.IsNullOrWhiteSpace(soDonHangRTextBox.Text))
             {
                 output = false;
             }
 
-            if (tenBaiInRTextBox.Text.Length <= 0)
+            if (string.IsNullOrWhiteSpace(tenBaiInRTextBox.Text))
             {
                 output = false;
             }
-            if (yeuCauRTextBoxCtrl.Text.Length <= 0)
+            if (string.IsNullOrWhiteSpace(yeuCauRTextBoxCtrl.Text))
             {
                 output = false;
             }
-            if (tinhTrangBaiSPDropDownList.Text.Length <= 0)
+            if (string.IsNullOrWhiteSpace(tinhTrangBaiSPDropDownList.Text))
             {
                 output = false;
             }
@@ -47,8 +65,20 @@ namespace NhatKyPhongIn.WFUI
         {
             if (ValidateForm())
             {
-                BaiSanPham model = new BaiSanPham(soDonHangRTextBox.Text, tenBaiInRTextBox.Text, yeuCauRTextBoxCtrl.Text,
-                    duongDanFile01RTextBox.Text, duongDanFile02RTextBox.Text, duongDanFile03RTextBox.Text);
+                //Giải quyết tình trạng
+
+                BaiSanPhamModel model = new BaiSanPhamModel(soDonHangRTextBox.Text, tenBaiInRTextBox.Text
+                    , yeuCauRTextBoxCtrl.Text, duongDanFile01RTextBox.Text, duongDanFile02RTextBox.Text,
+                    duongDanFile03RTextBox.Text, thoiHanRDateTime.Value, tinhTrangBaiSPDropDownList.Text);
+                //Thêm zô
+                var baiSanPham = new BaiSanPham();
+                baiSanPham.Them(model);
+                //đóng form
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Bạn cần điền đủ và đúng thông tin");
             }
         }
     }

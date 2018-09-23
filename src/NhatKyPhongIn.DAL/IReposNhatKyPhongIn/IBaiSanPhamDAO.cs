@@ -10,10 +10,10 @@ namespace NhatKyPhongIn.DAL.IReposNhatKyPhongIn
     public interface IBaiSanPhamDAO
     {
 
-        IEnumerable<BaiSanPhamBDO> LayTatCa();
+        IEnumerable<BaiSanPhamBDO> DocTatCa();
 
 
-        BaiSanPhamBDO LayTheoId(int iD);
+        BaiSanPhamBDO DocTheoId(int iD);
         void Them(BaiSanPhamBDO entityBDO);
         void Sua(BaiSanPhamBDO entityBDO);
         void Xoa(int iD);

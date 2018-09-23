@@ -3,3 +3,9 @@ F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\NhatKyPhongIn.DAL.pdb
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\obj\Debug\NhatKyPhongIn.DAL.csprojResolveAssemblyReference.cache
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\obj\Debug\NhatKyPhongIn.DAL.dll
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\obj\Debug\NhatKyPhongIn.DAL.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\Dapper.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\NhatKyPhongIn.BDO.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\NhatKyPhongIn.Common.dll
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\NhatKyPhongIn.BDO.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\NhatKyPhongIn.Common.pdb
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.DAL\bin\Debug\Dapper.xml
