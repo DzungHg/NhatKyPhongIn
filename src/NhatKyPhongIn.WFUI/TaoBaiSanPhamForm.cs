@@ -14,7 +14,17 @@ namespace NhatKyPhongIn.WFUI
 {
     public partial class TaoBaiSanPhamForm : Telerik.WinControls.UI.RadForm
     {
-       
+        //Thêm field
+        /// <summary>
+        /// Dùng nhận Id khi sửa hoặc xóa form
+        /// </summary>
+        //public int IdModel { get; set; }
+        /// <summary>
+        /// Theo dõi tình trạng form thêm sửa xóa
+        /// </summary>
+        public TinhTrangForm TinhTrangForm { get; set; }
+        //Dùng biến để sửa
+        public BaiSanPhamModel baiSanPhamEdited;
         public TaoBaiSanPhamForm()
         {
             InitializeComponent();
@@ -22,8 +32,7 @@ namespace NhatKyPhongIn.WFUI
             InitializeFormData();
             //Đặt Cb
             tinhTrangBaiSPDropDownList.SelectedIndex = 0;//Đầu tiên "Nhap"
-            //Lock cboTinhTrang
-            tinhTrangBaiSPDropDownList.Enabled = false;
+            
         }
         private void InitializeFormData()
         {
@@ -65,20 +74,64 @@ namespace NhatKyPhongIn.WFUI
         {
             if (ValidateForm())
             {
-                //Giải quyết tình trạng
-
-                BaiSanPhamModel model = new BaiSanPhamModel(soDonHangRTextBox.Text, tenBaiInRTextBox.Text
-                    , yeuCauRTextBoxCtrl.Text, duongDanFile01RTextBox.Text, duongDanFile02RTextBox.Text,
-                    duongDanFile03RTextBox.Text, thoiHanRDateTime.Value, tinhTrangBaiSPDropDownList.Text);
-                //Thêm zô
+               
                 var baiSanPham = new BaiSanPham();
-                baiSanPham.Them(model);
-                //đóng form
+                //Giải quyết tình trạng
+                switch (this.TinhTrangForm)
+                {
+                    case TinhTrangForm.Them:
+                        //Tạo mới
+                        BaiSanPhamModel model = new BaiSanPhamModel(soDonHangRTextBox.Text, tenBaiInRTextBox.Text
+                           , yeuCauRTextBoxCtrl.Text, duongDanFile01RTextBox.Text, duongDanFile02RTextBox.Text,
+                           duongDanFile03RTextBox.Text, thoiHanRDateTime.Value, tinhTrangBaiSPDropDownList.Text);
+                        //Tạo DtôCnact
+                        baiSanPham.Them(model);
+                        break;
+                    case TinhTrangForm.Sua:
+                        //Xài cái sửa
+                        baiSanPhamEdited.SoDonHang = soDonHangRTextBox.Text;
+                        baiSanPhamEdited.TenSanPham = tenBaiInRTextBox.Text;
+                        baiSanPhamEdited.YeuCau = yeuCauRTextBoxCtrl.Text;
+                        baiSanPhamEdited.DuongDanFile01 = duongDanFile01RTextBox.Text;
+                        baiSanPhamEdited.DuongDanFile02 = duongDanFile02RTextBox.Text;
+                        baiSanPhamEdited.DuongDanFile03 = duongDanFile03RTextBox.Text;
+                        baiSanPhamEdited.ThoiHan = thoiHanRDateTime.Value;
+                        baiSanPhamEdited.TinhTrangBaiSanPham = tinhTrangBaiSPDropDownList.Text;
+                        baiSanPham.Sua(baiSanPhamEdited);
+                        break;
+                }               
+               
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             } else
             {
                 MessageBox.Show("Bạn cần điền đủ và đúng thông tin");
+            }
+        }
+
+        private void TaoBaiSanPhamForm_Load(object sender, EventArgs e)
+        {
+            //Load điền dữ liệu nếu sửa
+            if (this.TinhTrangForm == TinhTrangForm.Sua)
+            {
+                soDonHangRTextBox.Text = baiSanPhamEdited.SoDonHang;
+                tenBaiInRTextBox.Text = baiSanPhamEdited.TenSanPham;
+                yeuCauRTextBoxCtrl.Text = baiSanPhamEdited.YeuCau;
+                duongDanFile01RTextBox.Text = baiSanPhamEdited.DuongDanFile01;
+                duongDanFile02RTextBox.Text = baiSanPhamEdited.DuongDanFile02;
+                duongDanFile03RTextBox.Text = baiSanPhamEdited.DuongDanFile03;
+                tinhTrangBaiSPDropDownList.Text = baiSanPhamEdited.TinhTrangBaiSanPham;
+                thoiHanRDateTime.Value = baiSanPhamEdited.ThoiHan;
+                //Enable
+                tinhTrangBaiSPDropDownList.Enabled = true;
+                //
+                titleRLabel.Text = $"SỬA BÀI SẢN PHẨM ID[{baiSanPhamEdited.Id}]";
+                titleRLabel.Left = (this.ClientSize.Width - titleRLabel.Width) / 2;
+            }
+            else
+            {
+                //Lock cboTinhTrang
+                tinhTrangBaiSPDropDownList.Enabled = false;
             }
         }
     }

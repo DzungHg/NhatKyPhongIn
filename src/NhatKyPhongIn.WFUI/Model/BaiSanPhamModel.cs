@@ -9,6 +9,7 @@ namespace NhatKyPhongIn.WFUI.Model
 {
     public class BaiSanPhamModel
     {
+        public int Id { get; set; }
         public string SoDonHang { get; set; }
         public string TenSanPham { get; set; }
         public string YeuCau { get; set; }

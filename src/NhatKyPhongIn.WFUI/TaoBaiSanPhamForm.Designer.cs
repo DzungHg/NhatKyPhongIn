@@ -143,7 +143,7 @@
             this.tinhTrangBaiSPDropDownList.Location = new System.Drawing.Point(347, 333);
             this.tinhTrangBaiSPDropDownList.Name = "tinhTrangBaiSPDropDownList";
             this.tinhTrangBaiSPDropDownList.Size = new System.Drawing.Size(127, 20);
-            this.tinhTrangBaiSPDropDownList.TabIndex = 8;
+            this.tinhTrangBaiSPDropDownList.TabIndex = 10;
             // 
             // radLabel17
             // 
@@ -177,14 +177,14 @@
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(96, 18);
             this.radLabel4.TabIndex = 34;
-            this.radLabel4.Text = "Đường dẫn file 01";
+            this.radLabel4.Text = "Đường dẫn file 02";
             // 
             // duongDanFile02RTextBox
             // 
             this.duongDanFile02RTextBox.Location = new System.Drawing.Point(347, 158);
             this.duongDanFile02RTextBox.Name = "duongDanFile02RTextBox";
             this.duongDanFile02RTextBox.Size = new System.Drawing.Size(301, 37);
-            this.duongDanFile02RTextBox.TabIndex = 6;
+            this.duongDanFile02RTextBox.TabIndex = 7;
             // 
             // radLabel5
             // 
@@ -192,14 +192,14 @@
             this.radLabel5.Name = "radLabel5";
             this.radLabel5.Size = new System.Drawing.Size(96, 18);
             this.radLabel5.TabIndex = 34;
-            this.radLabel5.Text = "Đường dẫn file 01";
+            this.radLabel5.Text = "Đường dẫn file 03";
             // 
             // duongDanFile03RTextBox
             // 
             this.duongDanFile03RTextBox.Location = new System.Drawing.Point(347, 223);
             this.duongDanFile03RTextBox.Name = "duongDanFile03RTextBox";
             this.duongDanFile03RTextBox.Size = new System.Drawing.Size(301, 37);
-            this.duongDanFile03RTextBox.TabIndex = 7;
+            this.duongDanFile03RTextBox.TabIndex = 8;
             // 
             // radLabel15
             // 
@@ -214,7 +214,7 @@
             this.thoiHanRDateTime.Location = new System.Drawing.Point(351, 288);
             this.thoiHanRDateTime.Name = "thoiHanRDateTime";
             this.thoiHanRDateTime.Size = new System.Drawing.Size(164, 20);
-            this.thoiHanRDateTime.TabIndex = 53;
+            this.thoiHanRDateTime.TabIndex = 9;
             this.thoiHanRDateTime.TabStop = false;
             this.thoiHanRDateTime.Text = "Saturday, September 22, 2018";
             this.thoiHanRDateTime.Value = new System.DateTime(2018, 9, 22, 14, 20, 5, 139);
@@ -249,6 +249,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Tạo bài sản phẩm";
+            this.Load += new System.EventHandler(this.TaoBaiSanPhamForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenBaiInRTextBox)).EndInit();

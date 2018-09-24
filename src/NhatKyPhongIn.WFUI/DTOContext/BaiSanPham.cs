@@ -27,33 +27,38 @@ namespace NhatKyPhongIn.WFUI.DTOContext
         public BaiSanPhamModel DocTheoId(int idBaiSanPham)
         {
             var objBDO = logic.DocTheoId(idBaiSanPham);
-            var objModel = new BaiSanPhamModel();
-            //Chuyen doi
-            ChuyenObjectBDOThanhObjectDTO(objBDO, objModel);
+
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<BaiSanPhamBDO, BaiSanPhamModel>());
+            var mapper = config.CreateMapper();
+
+            var objModel = mapper.Map<BaiSanPhamModel>(objBDO);
+            
             //Trả về
             return objModel;
         }
 
         public void Sua(BaiSanPhamModel baiSP)
-        {
-            var objBDO = new BaiSanPhamBDO();
-            //Chuyen doi
-            ChuyenObjectDTOThanhObjectBDO(baiSP, objBDO);
-            //Thucthi
+        {            
+
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<BaiSanPhamModel, BaiSanPhamBDO>());
+            var mapper = config.CreateMapper();
+            var objBDO = mapper.Map<BaiSanPhamBDO>(baiSP);
             logic.Sua(objBDO);
         }
 
         public void Them(BaiSanPhamModel baiSP)
         {
-            var objBDO = new BaiSanPhamBDO();
-
+            
             var config = new MapperConfiguration(cfg => cfg.CreateMap<BaiSanPhamModel, BaiSanPhamBDO>());
             var mapper = config.CreateMapper();
-            objBDO = mapper.Map <BaiSanPhamBDO>(baiSP);
+            var objBDO = mapper.Map <BaiSanPhamBDO>(baiSP);
             //Chuyển
             //ChuyenObjectDTOThanhObjectBDO(baiSP, objBDO);
             //Thêm
-            logic.Them(objBDO); //Thành công Mapper được
+            if (objBDO != null)
+            {
+                logic.Them(objBDO); //Thành công Mapper được
+            }
         }
 
         public void Xoa(int idBaiSanPham)

@@ -28,100 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            this.radSplitCont1 = new Telerik.WinControls.UI.RadSplitContainer();
-            this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
-            this.locBaiSanPhamDataFilter = new Telerik.WinControls.UI.RadDataFilter();
-            this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
-            this.baiSanPhamRGridView = new Telerik.WinControls.UI.RadGridView();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.taoBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
             this.titleRLabel = new Telerik.WinControls.UI.RadLabel();
             this.suaBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
             this.dongFormRButton = new Telerik.WinControls.UI.RadButton();
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitCont1)).BeginInit();
-            this.radSplitCont1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
-            this.splitPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.locBaiSanPhamDataFilter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
-            this.splitPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView.MasterTemplate)).BeginInit();
+            this.baiSanPhamRGridView = new Telerik.WinControls.UI.RadGridView();
+            this.headRPanel = new Telerik.WinControls.UI.RadPanel();
             ((System.ComponentModel.ISupportInitialize)(this.taoBaiSanPhamRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suaBaiSanPhamRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dongFormRButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headRPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
-            // 
-            // radSplitCont1
-            // 
-            this.radSplitCont1.Controls.Add(this.splitPanel1);
-            this.radSplitCont1.Controls.Add(this.splitPanel2);
-            this.radSplitCont1.Location = new System.Drawing.Point(9, 72);
-            this.radSplitCont1.Name = "radSplitCont1";
-            // 
-            // 
-            // 
-            this.radSplitCont1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.radSplitCont1.Size = new System.Drawing.Size(625, 366);
-            this.radSplitCont1.TabIndex = 4;
-            this.radSplitCont1.TabStop = false;
-            // 
-            // splitPanel1
-            // 
-            this.splitPanel1.Controls.Add(this.locBaiSanPhamDataFilter);
-            this.splitPanel1.Location = new System.Drawing.Point(0, 0);
-            this.splitPanel1.Name = "splitPanel1";
-            // 
-            // 
-            // 
-            this.splitPanel1.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel1.Size = new System.Drawing.Size(241, 366);
-            this.splitPanel1.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(-0.1118547F, 0F);
-            this.splitPanel1.SizeInfo.SplitterCorrection = new System.Drawing.Size(-59, 0);
-            this.splitPanel1.TabIndex = 0;
-            this.splitPanel1.TabStop = false;
-            this.splitPanel1.Text = "splitPanel1";
-            // 
-            // locBaiSanPhamDataFilter
-            // 
-            this.locBaiSanPhamDataFilter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.locBaiSanPhamDataFilter.Location = new System.Drawing.Point(0, 0);
-            this.locBaiSanPhamDataFilter.Name = "locBaiSanPhamDataFilter";
-            this.locBaiSanPhamDataFilter.Size = new System.Drawing.Size(241, 366);
-            this.locBaiSanPhamDataFilter.TabIndex = 1;
-            // 
-            // splitPanel2
-            // 
-            this.splitPanel2.Controls.Add(this.baiSanPhamRGridView);
-            this.splitPanel2.Location = new System.Drawing.Point(245, 0);
-            this.splitPanel2.Name = "splitPanel2";
-            // 
-            // 
-            // 
-            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(380, 366);
-            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.1118547F, 0F);
-            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(59, 0);
-            this.splitPanel2.TabIndex = 1;
-            this.splitPanel2.TabStop = false;
-            this.splitPanel2.Text = "splitPanel2";
-            this.splitPanel2.Resize += new System.EventHandler(this.splitPanel2_Resize);
-            // 
-            // baiSanPhamRGridView
-            // 
-            this.baiSanPhamRGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.baiSanPhamRGridView.Location = new System.Drawing.Point(0, 0);
-            // 
-            // 
-            // 
-            this.baiSanPhamRGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
-            this.baiSanPhamRGridView.Name = "baiSanPhamRGridView";
-            this.baiSanPhamRGridView.ReadOnly = true;
-            this.baiSanPhamRGridView.Size = new System.Drawing.Size(380, 366);
-            this.baiSanPhamRGridView.TabIndex = 2;
-            this.baiSanPhamRGridView.CreateRow += new Telerik.WinControls.UI.GridViewCreateRowEventHandler(this.baiSanPhamRGridView_CreateRow);
             // 
             // taoBaiSanPhamRButton
             // 
@@ -148,25 +70,47 @@
             this.suaBaiSanPhamRButton.Size = new System.Drawing.Size(110, 24);
             this.suaBaiSanPhamRButton.TabIndex = 11;
             this.suaBaiSanPhamRButton.Text = "Sửa Bài Sản Phẩm";
+            this.suaBaiSanPhamRButton.Click += new System.EventHandler(this.suaBaiSanPhamRButton_Click);
             // 
             // dongFormRButton
             // 
+            this.dongFormRButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.dongFormRButton.Location = new System.Drawing.Point(263, 478);
             this.dongFormRButton.Name = "dongFormRButton";
             this.dongFormRButton.Size = new System.Drawing.Size(110, 24);
             this.dongFormRButton.TabIndex = 12;
             this.dongFormRButton.Text = "Đóng";
             // 
+            // baiSanPhamRGridView
+            // 
+            this.baiSanPhamRGridView.Location = new System.Drawing.Point(27, 131);
+            // 
+            // 
+            // 
+            this.baiSanPhamRGridView.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.baiSanPhamRGridView.Name = "baiSanPhamRGridView";
+            this.baiSanPhamRGridView.ReadOnly = true;
+            this.baiSanPhamRGridView.Size = new System.Drawing.Size(578, 322);
+            this.baiSanPhamRGridView.TabIndex = 13;
+            // 
+            // headRPanel
+            // 
+            this.headRPanel.Location = new System.Drawing.Point(27, 87);
+            this.headRPanel.Name = "headRPanel";
+            this.headRPanel.Size = new System.Drawing.Size(578, 38);
+            this.headRPanel.TabIndex = 14;
+            // 
             // BangDieuKhienBaiSanPhamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 514);
+            this.ClientSize = new System.Drawing.Size(653, 514);
+            this.Controls.Add(this.headRPanel);
+            this.Controls.Add(this.baiSanPhamRGridView);
             this.Controls.Add(this.dongFormRButton);
             this.Controls.Add(this.suaBaiSanPhamRButton);
             this.Controls.Add(this.titleRLabel);
             this.Controls.Add(this.taoBaiSanPhamRButton);
-            this.Controls.Add(this.radSplitCont1);
             this.Name = "BangDieuKhienBaiSanPhamForm";
             // 
             // 
@@ -175,19 +119,13 @@
             this.Text = "Bảng Điều Khiển Bài In";
             this.Load += new System.EventHandler(this.BangDieuKhienBaiSanPhamForm_Load);
             this.Resize += new System.EventHandler(this.BangDieuKhienBaiSanPhamForm_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.radSplitCont1)).EndInit();
-            this.radSplitCont1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
-            this.splitPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.locBaiSanPhamDataFilter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
-            this.splitPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView.MasterTemplate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.taoBaiSanPhamRButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suaBaiSanPhamRButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dongFormRButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.baiSanPhamRGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.headRPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,15 +133,11 @@
         }
 
         #endregion
-
-        private Telerik.WinControls.UI.RadSplitContainer radSplitCont1;
-        private Telerik.WinControls.UI.SplitPanel splitPanel1;
-        private Telerik.WinControls.UI.RadDataFilter locBaiSanPhamDataFilter;
-        private Telerik.WinControls.UI.SplitPanel splitPanel2;
-        private Telerik.WinControls.UI.RadGridView baiSanPhamRGridView;
         private Telerik.WinControls.UI.RadButton taoBaiSanPhamRButton;
         private Telerik.WinControls.UI.RadLabel titleRLabel;
         private Telerik.WinControls.UI.RadButton suaBaiSanPhamRButton;
         private Telerik.WinControls.UI.RadButton dongFormRButton;
+        private Telerik.WinControls.UI.RadGridView baiSanPhamRGridView;
+        private Telerik.WinControls.UI.RadPanel headRPanel;
     }
 }
