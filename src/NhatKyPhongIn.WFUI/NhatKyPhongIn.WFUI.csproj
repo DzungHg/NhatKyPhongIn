@@ -89,6 +89,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOContext\MayIn.cs" />
+    <Compile Include="QuanLyMayInKTSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMayInKTSForm.Designer.cs">
+      <DependentUpon>QuanLyMayInKTSForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BangDieuKhienBaiSanPhamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +115,6 @@
       <DependentUpon>BangDieuKhienMayInForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DTOContext\BaiSanPham.cs" />
-    <Compile Include="DTOContext\IBaiSanPham.cs" />
     <Compile Include="MapProfile\BaiSanPhamBDOBaiSanPhamModelProfile.cs" />
     <Compile Include="MapProfile\BaiSanPhamModelBaiSanPhamBDOProfile.cs" />
     <Compile Include="Model\BaiInModel.cs" />
@@ -134,6 +140,12 @@
     <Compile Include="TaoBaiInForm.Designer.cs">
       <DependentUpon>TaoBaiInForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TaoMayInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoMayInForm.Designer.cs">
+      <DependentUpon>TaoMayInForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TaoNhatKyBaiInForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +158,9 @@
     <Compile Include="VoPhongInForm.Designer.cs">
       <DependentUpon>VoPhongInForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyMayInKTSForm.resx">
+      <DependentUpon>QuanLyMayInKTSForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BangDieuKhienBaiSanPhamForm.resx">
       <DependentUpon>BangDieuKhienBaiSanPhamForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TaoBaiInForm.resx">
       <DependentUpon>TaoBaiInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoMayInForm.resx">
+      <DependentUpon>TaoMayInForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaoNhatKyBaiInForm.resx">
       <DependentUpon>TaoNhatKyBaiInForm.cs</DependentUpon>

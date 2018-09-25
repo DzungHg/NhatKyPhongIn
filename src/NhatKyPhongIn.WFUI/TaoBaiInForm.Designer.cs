@@ -58,7 +58,7 @@
             this.radLabel14 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel15 = new Telerik.WinControls.UI.RadLabel();
             this.mucUuTienRDropDownList = new Telerik.WinControls.UI.RadDropDownList();
-            this.duongDanFileRTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.duongDanFileInRTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
             this.radLabel16 = new Telerik.WinControls.UI.RadLabel();
             this.tinhTrangBaiInDropDownList4 = new Telerik.WinControls.UI.RadDropDownList();
             this.radLabel17 = new Telerik.WinControls.UI.RadLabel();
@@ -66,6 +66,8 @@
             this.cancelFormRButton = new Telerik.WinControls.UI.RadButton();
             this.radLabel18 = new Telerik.WinControls.UI.RadLabel();
             this.thoiHanInXongRDateTime = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
+            this.duongDanFileKHRTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenBaiInRTextBox)).BeginInit();
@@ -96,7 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mucUuTienRDropDownList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileRTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileInRTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tinhTrangBaiInDropDownList4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).BeginInit();
@@ -104,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cancelFormRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thoiHanInXongRDateTime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileKHRTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -277,7 +281,7 @@
             // 
             // radDropDownList1
             // 
-            this.radDropDownList1.Location = new System.Drawing.Point(370, 166);
+            this.radDropDownList1.Location = new System.Drawing.Point(467, 116);
             this.radDropDownList1.Name = "radDropDownList1";
             this.radDropDownList1.Size = new System.Drawing.Size(127, 20);
             this.radDropDownList1.TabIndex = 11;
@@ -285,7 +289,7 @@
             // 
             // radLabel12
             // 
-            this.radLabel12.Location = new System.Drawing.Point(370, 142);
+            this.radLabel12.Location = new System.Drawing.Point(467, 92);
             this.radLabel12.Name = "radLabel12";
             this.radLabel12.Size = new System.Drawing.Size(41, 18);
             this.radLabel12.TabIndex = 27;
@@ -293,14 +297,14 @@
             // 
             // radTextBox9
             // 
-            this.radTextBox9.Location = new System.Drawing.Point(371, 216);
+            this.radTextBox9.Location = new System.Drawing.Point(371, 166);
             this.radTextBox9.Name = "radTextBox9";
             this.radTextBox9.Size = new System.Drawing.Size(77, 20);
             this.radTextBox9.TabIndex = 12;
             // 
             // radLabel13
             // 
-            this.radLabel13.Location = new System.Drawing.Point(371, 192);
+            this.radLabel13.Location = new System.Drawing.Point(371, 142);
             this.radLabel13.Name = "radLabel13";
             this.radLabel13.Size = new System.Drawing.Size(76, 18);
             this.radLabel13.TabIndex = 28;
@@ -308,7 +312,7 @@
             // 
             // donViTinhClickRDropDownList
             // 
-            this.donViTinhClickRDropDownList.Location = new System.Drawing.Point(468, 217);
+            this.donViTinhClickRDropDownList.Location = new System.Drawing.Point(468, 167);
             this.donViTinhClickRDropDownList.Name = "donViTinhClickRDropDownList";
             this.donViTinhClickRDropDownList.Size = new System.Drawing.Size(127, 20);
             this.donViTinhClickRDropDownList.TabIndex = 13;
@@ -316,7 +320,7 @@
             // 
             // radLabel14
             // 
-            this.radLabel14.Location = new System.Drawing.Point(468, 193);
+            this.radLabel14.Location = new System.Drawing.Point(468, 143);
             this.radLabel14.Name = "radLabel14";
             this.radLabel14.Size = new System.Drawing.Size(61, 18);
             this.radLabel14.TabIndex = 29;
@@ -324,7 +328,7 @@
             // 
             // radLabel15
             // 
-            this.radLabel15.Location = new System.Drawing.Point(370, 242);
+            this.radLabel15.Location = new System.Drawing.Point(370, 192);
             this.radLabel15.Name = "radLabel15";
             this.radLabel15.Size = new System.Drawing.Size(66, 18);
             this.radLabel15.TabIndex = 31;
@@ -332,38 +336,38 @@
             // 
             // mucUuTienRDropDownList
             // 
-            this.mucUuTienRDropDownList.Location = new System.Drawing.Point(370, 266);
+            this.mucUuTienRDropDownList.Location = new System.Drawing.Point(370, 216);
             this.mucUuTienRDropDownList.Name = "mucUuTienRDropDownList";
             this.mucUuTienRDropDownList.Size = new System.Drawing.Size(127, 20);
             this.mucUuTienRDropDownList.TabIndex = 14;
             this.mucUuTienRDropDownList.Text = "radDropDownList3";
             // 
-            // duongDanFileRTextBox
+            // duongDanFileInRTextBox
             // 
-            this.duongDanFileRTextBox.Location = new System.Drawing.Point(370, 314);
-            this.duongDanFileRTextBox.Name = "duongDanFileRTextBox";
-            this.duongDanFileRTextBox.Size = new System.Drawing.Size(301, 37);
-            this.duongDanFileRTextBox.TabIndex = 16;
+            this.duongDanFileInRTextBox.Location = new System.Drawing.Point(369, 329);
+            this.duongDanFileInRTextBox.Name = "duongDanFileInRTextBox";
+            this.duongDanFileInRTextBox.Size = new System.Drawing.Size(301, 37);
+            this.duongDanFileInRTextBox.TabIndex = 16;
             // 
             // radLabel16
             // 
-            this.radLabel16.Location = new System.Drawing.Point(371, 292);
+            this.radLabel16.Location = new System.Drawing.Point(370, 307);
             this.radLabel16.Name = "radLabel16";
-            this.radLabel16.Size = new System.Drawing.Size(81, 18);
+            this.radLabel16.Size = new System.Drawing.Size(95, 18);
             this.radLabel16.TabIndex = 32;
-            this.radLabel16.Text = "Đường dẫn file";
+            this.radLabel16.Text = "Đường dẫn File In";
             // 
             // tinhTrangBaiInDropDownList4
             // 
-            this.tinhTrangBaiInDropDownList4.Location = new System.Drawing.Point(370, 379);
+            this.tinhTrangBaiInDropDownList4.Location = new System.Drawing.Point(543, 372);
             this.tinhTrangBaiInDropDownList4.Name = "tinhTrangBaiInDropDownList4";
             this.tinhTrangBaiInDropDownList4.Size = new System.Drawing.Size(127, 20);
-            this.tinhTrangBaiInDropDownList4.TabIndex = 18;
+            this.tinhTrangBaiInDropDownList4.TabIndex = 17;
             this.tinhTrangBaiInDropDownList4.Text = "radDropDownList4";
             // 
             // radLabel17
             // 
-            this.radLabel17.Location = new System.Drawing.Point(370, 359);
+            this.radLabel17.Location = new System.Drawing.Point(479, 374);
             this.radLabel17.Name = "radLabel17";
             this.radLabel17.Size = new System.Drawing.Size(58, 18);
             this.radLabel17.TabIndex = 32;
@@ -374,7 +378,7 @@
             this.luuTruRButton.Location = new System.Drawing.Point(387, 420);
             this.luuTruRButton.Name = "luuTruRButton";
             this.luuTruRButton.Size = new System.Drawing.Size(110, 24);
-            this.luuTruRButton.TabIndex = 20;
+            this.luuTruRButton.TabIndex = 50;
             this.luuTruRButton.Text = "Lưu";
             // 
             // cancelFormRButton
@@ -382,12 +386,12 @@
             this.cancelFormRButton.Location = new System.Drawing.Point(211, 420);
             this.cancelFormRButton.Name = "cancelFormRButton";
             this.cancelFormRButton.Size = new System.Drawing.Size(110, 24);
-            this.cancelFormRButton.TabIndex = 21;
+            this.cancelFormRButton.TabIndex = 51;
             this.cancelFormRButton.Text = "Hủy";
             // 
             // radLabel18
             // 
-            this.radLabel18.Location = new System.Drawing.Point(503, 243);
+            this.radLabel18.Location = new System.Drawing.Point(503, 193);
             this.radLabel18.Name = "radLabel18";
             this.radLabel18.Size = new System.Drawing.Size(90, 18);
             this.radLabel18.TabIndex = 32;
@@ -395,7 +399,7 @@
             // 
             // thoiHanInXongRDateTime
             // 
-            this.thoiHanInXongRDateTime.Location = new System.Drawing.Point(507, 267);
+            this.thoiHanInXongRDateTime.Location = new System.Drawing.Point(507, 217);
             this.thoiHanInXongRDateTime.Name = "thoiHanInXongRDateTime";
             this.thoiHanInXongRDateTime.Size = new System.Drawing.Size(164, 20);
             this.thoiHanInXongRDateTime.TabIndex = 15;
@@ -403,11 +407,28 @@
             this.thoiHanInXongRDateTime.Text = "Saturday, September 22, 2018";
             this.thoiHanInXongRDateTime.Value = new System.DateTime(2018, 9, 22, 14, 20, 5, 139);
             // 
+            // radLabel19
+            // 
+            this.radLabel19.Location = new System.Drawing.Point(370, 242);
+            this.radLabel19.Name = "radLabel19";
+            this.radLabel19.Size = new System.Drawing.Size(100, 18);
+            this.radLabel19.TabIndex = 34;
+            this.radLabel19.Text = "Đường dẫn File KH";
+            // 
+            // duongDanFileKHRTextBox
+            // 
+            this.duongDanFileKHRTextBox.Location = new System.Drawing.Point(369, 264);
+            this.duongDanFileKHRTextBox.Name = "duongDanFileKHRTextBox";
+            this.duongDanFileKHRTextBox.Size = new System.Drawing.Size(301, 37);
+            this.duongDanFileKHRTextBox.TabIndex = 15;
+            // 
             // TaoBaiInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 456);
+            this.Controls.Add(this.radLabel19);
+            this.Controls.Add(this.duongDanFileKHRTextBox);
             this.Controls.Add(this.thoiHanInXongRDateTime);
             this.Controls.Add(this.radLabel18);
             this.Controls.Add(this.cancelFormRButton);
@@ -415,7 +436,7 @@
             this.Controls.Add(this.radLabel17);
             this.Controls.Add(this.tinhTrangBaiInDropDownList4);
             this.Controls.Add(this.radLabel16);
-            this.Controls.Add(this.duongDanFileRTextBox);
+            this.Controls.Add(this.duongDanFileInRTextBox);
             this.Controls.Add(this.radLabel15);
             this.Controls.Add(this.mucUuTienRDropDownList);
             this.Controls.Add(this.radLabel14);
@@ -482,7 +503,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mucUuTienRDropDownList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileRTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileInRTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tinhTrangBaiInDropDownList4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel17)).EndInit();
@@ -490,6 +511,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cancelFormRButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.thoiHanInXongRDateTime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.duongDanFileKHRTextBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -528,7 +551,7 @@
         private Telerik.WinControls.UI.RadLabel radLabel14;
         private Telerik.WinControls.UI.RadLabel radLabel15;
         private Telerik.WinControls.UI.RadDropDownList mucUuTienRDropDownList;
-        private Telerik.WinControls.UI.RadTextBoxControl duongDanFileRTextBox;
+        private Telerik.WinControls.UI.RadTextBoxControl duongDanFileInRTextBox;
         private Telerik.WinControls.UI.RadLabel radLabel16;
         private Telerik.WinControls.UI.RadDropDownList tinhTrangBaiInDropDownList4;
         private Telerik.WinControls.UI.RadLabel radLabel17;
@@ -536,5 +559,7 @@
         private Telerik.WinControls.UI.RadButton cancelFormRButton;
         private Telerik.WinControls.UI.RadLabel radLabel18;
         private Telerik.WinControls.UI.RadDateTimePicker thoiHanInXongRDateTime;
+        private Telerik.WinControls.UI.RadLabel radLabel19;
+        private Telerik.WinControls.UI.RadTextBoxControl duongDanFileKHRTextBox;
     }
 }

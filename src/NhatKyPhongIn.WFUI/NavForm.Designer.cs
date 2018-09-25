@@ -42,6 +42,8 @@
             this.tenUserRLabel = new Telerik.WinControls.UI.RadLabel();
             this.menuTopRMenu = new Telerik.WinControls.UI.RadMenu();
             this.QuanLyBaiSanPharmRButton = new Telerik.WinControls.UI.RadButton();
+            this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
+            this.mayInKTSRMenuItem = new Telerik.WinControls.UI.RadMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongInRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyBaiInRButton)).BeginInit();
@@ -143,7 +145,8 @@
             this.menuTopRMenu.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radMenuItem1,
             this.radMenuItem2,
-            this.radMenuItem3});
+            this.radMenuItem3,
+            this.radMenuItem4});
             this.menuTopRMenu.Location = new System.Drawing.Point(0, 0);
             this.menuTopRMenu.Name = "menuTopRMenu";
             this.menuTopRMenu.Size = new System.Drawing.Size(365, 20);
@@ -157,6 +160,19 @@
             this.QuanLyBaiSanPharmRButton.TabIndex = 4;
             this.QuanLyBaiSanPharmRButton.Text = "Quản lý Bài SP";
             this.QuanLyBaiSanPharmRButton.Click += new System.EventHandler(this.QuanLyBaiSanPharmRButton_Click);
+            // 
+            // radMenuItem4
+            // 
+            this.radMenuItem4.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.mayInKTSRMenuItem});
+            this.radMenuItem4.Name = "radMenuItem4";
+            this.radMenuItem4.Text = "Thiết lập";
+            // 
+            // mayInKTSRMenuItem
+            // 
+            this.mayInKTSRMenuItem.Name = "mayInKTSRMenuItem";
+            this.mayInKTSRMenuItem.Text = "Máy In KTS";
+            this.mayInKTSRMenuItem.Click += new System.EventHandler(this.mayInKTSRMenuItem_Click);
             // 
             // NavForm
             // 
@@ -207,5 +223,7 @@
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadLabel tenUserRLabel;
         private Telerik.WinControls.UI.RadButton QuanLyBaiSanPharmRButton;
+        private Telerik.WinControls.UI.RadMenuItem radMenuItem4;
+        private Telerik.WinControls.UI.RadMenuItem mayInKTSRMenuItem;
     }
 }

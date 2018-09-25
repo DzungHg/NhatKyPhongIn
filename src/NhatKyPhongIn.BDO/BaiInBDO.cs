@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace NhatKyPhongIn.BDO
 {
-    public class BaiinBDO
+    public class BaiInBDO
     {
         public int Id { get; set; }
         public string TenBaiIn { get; set; }
         public string NguoiLamFile { get; set; }
         public string DienGiaiIn { get; set; }
         public int IdMayIn { get; set; }
+        public string TenMayIn { get; set; }
         public string TenGiayIn { get; set; }
         public double ToChayRong { get; set; }
         public double ToChayDai { get; set; }
@@ -23,7 +24,8 @@ namespace NhatKyPhongIn.BDO
         public double SoClickCanIn { get; set; }
         public string DonViTinhClick { get; set; }
 
-        public int MucUuTien { get; set; } 
+        public int MucUuTien { get; set; }
+        public string DuongDanFileKhachHang { get; set; }
         public string DuongDanFileIn { get; set; }
         public string TinhTrangBaiIn { get; set; }
         public DateTime ThoiHanInXong { get; set; }

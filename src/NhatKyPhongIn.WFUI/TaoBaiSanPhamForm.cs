@@ -47,20 +47,20 @@ namespace NhatKyPhongIn.WFUI
         {
             bool output = true;
 
-            if (string.IsNullOrWhiteSpace(soDonHangRTextBox.Text))
+            if (soDonHangRTextBox.Text.Trim().Length == 0)
             {
                 output = false;
             }
 
-            if (string.IsNullOrWhiteSpace(tenBaiInRTextBox.Text))
+            if (tenBaiInRTextBox.Text.Trim().Length == 0)
             {
                 output = false;
             }
-            if (string.IsNullOrWhiteSpace(yeuCauRTextBoxCtrl.Text))
+            if (yeuCauRTextBoxCtrl.Text.Trim().Length == 0)
             {
                 output = false;
             }
-            if (string.IsNullOrWhiteSpace(tinhTrangBaiSPDropDownList.Text))
+            if (tinhTrangBaiSPDropDownList.Text.Trim().Length == 0)
             {
                 output = false;
             }

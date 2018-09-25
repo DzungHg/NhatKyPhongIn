@@ -23,7 +23,7 @@ namespace NhatKyPhongIn.WFUI
 
         private void nhatKyNgayRMenuItem_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void baiInRMenuItem_Click(object sender, EventArgs e)
@@ -36,6 +36,12 @@ namespace NhatKyPhongIn.WFUI
             var frm = new BangDieuKhienBaiSanPhamForm();
             frm.ShowDialog();
 
+        }
+
+        private void mayInKTSRMenuItem_Click(object sender, EventArgs e)
+        {
+            var frm = new QuanLyMayInKTSForm();
+            frm.ShowDialog();
         }
     }
 }

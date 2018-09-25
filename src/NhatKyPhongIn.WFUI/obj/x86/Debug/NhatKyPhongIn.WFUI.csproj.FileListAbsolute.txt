@@ -65,3 +65,5 @@ F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\bin\Debug\AutoMapper.xml
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\bin\Debug\System.ValueTuple.xml
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\bin\Debug\NhatKyPhongIn.DAL.pdb
 F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\bin\Debug\Dapper.xml
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\obj\x86\Debug\NhatKyPhongIn.WFUI.QuanLyMayInKTSForm.resources
+F:\GitHub02\NhatKyPhongIn\src\NhatKyPhongIn.WFUI\obj\x86\Debug\NhatKyPhongIn.WFUI.TaoMayInForm.resources

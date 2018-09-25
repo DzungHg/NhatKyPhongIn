@@ -11,7 +11,7 @@ using AutoMapper;
 
 namespace NhatKyPhongIn.WFUI.DTOContext
 {
-    public class BaiSanPham : IBaiSanPham
+    public class BaiSanPham
     {
         BaiSanPhamLogic logic = new BaiSanPhamLogic();
        
