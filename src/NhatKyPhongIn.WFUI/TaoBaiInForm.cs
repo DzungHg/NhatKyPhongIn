@@ -94,5 +94,14 @@ namespace NhatKyPhongIn.WFUI
             return output;
             //TODO - Test
         }
+
+        private void layBaiSanPhamRButton_Click(object sender, EventArgs e)
+        {
+            var frm = new LayBaiSanPhamForm();
+            frm.MaximizeBox = false;
+            frm.MinimizeBox = false;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog();
+        }
     }
 }

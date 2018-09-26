@@ -41,9 +41,9 @@
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.tenUserRLabel = new Telerik.WinControls.UI.RadLabel();
             this.menuTopRMenu = new Telerik.WinControls.UI.RadMenu();
-            this.QuanLyBaiSanPharmRButton = new Telerik.WinControls.UI.RadButton();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
             this.mayInKTSRMenuItem = new Telerik.WinControls.UI.RadMenuItem();
+            this.QuanLyBaiSanPharmRButton = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phongInRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyBaiInRButton)).BeginInit();
@@ -109,7 +109,7 @@
             // 
             // phongInRButton
             // 
-            this.phongInRButton.Location = new System.Drawing.Point(244, 26);
+            this.phongInRButton.Location = new System.Drawing.Point(128, 71);
             this.phongInRButton.Name = "phongInRButton";
             this.phongInRButton.Size = new System.Drawing.Size(110, 39);
             this.phongInRButton.TabIndex = 2;
@@ -117,11 +117,12 @@
             // 
             // quanLyBaiInRButton
             // 
-            this.quanLyBaiInRButton.Location = new System.Drawing.Point(128, 71);
+            this.quanLyBaiInRButton.Location = new System.Drawing.Point(244, 26);
             this.quanLyBaiInRButton.Name = "quanLyBaiInRButton";
             this.quanLyBaiInRButton.Size = new System.Drawing.Size(110, 39);
             this.quanLyBaiInRButton.TabIndex = 3;
             this.quanLyBaiInRButton.Text = "Quản lý Bài In";
+            this.quanLyBaiInRButton.Click += new System.EventHandler(this.quanLyBaiInRButton_Click);
             // 
             // radPanel1
             // 
@@ -152,15 +153,6 @@
             this.menuTopRMenu.Size = new System.Drawing.Size(365, 20);
             this.menuTopRMenu.TabIndex = 0;
             // 
-            // QuanLyBaiSanPharmRButton
-            // 
-            this.QuanLyBaiSanPharmRButton.Location = new System.Drawing.Point(128, 26);
-            this.QuanLyBaiSanPharmRButton.Name = "QuanLyBaiSanPharmRButton";
-            this.QuanLyBaiSanPharmRButton.Size = new System.Drawing.Size(110, 39);
-            this.QuanLyBaiSanPharmRButton.TabIndex = 4;
-            this.QuanLyBaiSanPharmRButton.Text = "Quản lý Bài SP";
-            this.QuanLyBaiSanPharmRButton.Click += new System.EventHandler(this.QuanLyBaiSanPharmRButton_Click);
-            // 
             // radMenuItem4
             // 
             this.radMenuItem4.Items.AddRange(new Telerik.WinControls.RadItem[] {
@@ -173,6 +165,15 @@
             this.mayInKTSRMenuItem.Name = "mayInKTSRMenuItem";
             this.mayInKTSRMenuItem.Text = "Máy In KTS";
             this.mayInKTSRMenuItem.Click += new System.EventHandler(this.mayInKTSRMenuItem_Click);
+            // 
+            // QuanLyBaiSanPharmRButton
+            // 
+            this.QuanLyBaiSanPharmRButton.Location = new System.Drawing.Point(128, 26);
+            this.QuanLyBaiSanPharmRButton.Name = "QuanLyBaiSanPharmRButton";
+            this.QuanLyBaiSanPharmRButton.Size = new System.Drawing.Size(110, 39);
+            this.QuanLyBaiSanPharmRButton.TabIndex = 4;
+            this.QuanLyBaiSanPharmRButton.Text = "Quản lý Bài SP";
+            this.QuanLyBaiSanPharmRButton.Click += new System.EventHandler(this.QuanLyBaiSanPharmRButton_Click);
             // 
             // NavForm
             // 

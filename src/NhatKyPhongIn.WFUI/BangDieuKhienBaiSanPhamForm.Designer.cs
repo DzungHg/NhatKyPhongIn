@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.taoBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
             this.titleRLabel = new Telerik.WinControls.UI.RadLabel();
             this.suaBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
@@ -87,11 +87,12 @@
             // 
             // 
             // 
-            this.baiSanPhamRGridView.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.baiSanPhamRGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.baiSanPhamRGridView.Name = "baiSanPhamRGridView";
             this.baiSanPhamRGridView.ReadOnly = true;
             this.baiSanPhamRGridView.Size = new System.Drawing.Size(578, 322);
             this.baiSanPhamRGridView.TabIndex = 13;
+            this.baiSanPhamRGridView.CreateCell += new Telerik.WinControls.UI.GridViewCreateCellEventHandler(this.baiSanPhamRGridView_CreateCell);
             // 
             // headRPanel
             // 

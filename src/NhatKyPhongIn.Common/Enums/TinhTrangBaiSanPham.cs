@@ -2,10 +2,11 @@
 {
     public enum TinhTrangBaiSanPham
     {
-        Nhap = 0,
-        DangHopChuan = 1,
-        SanSangKyThuat = 2,
-        DaDuaVoSanXuat = 3,
+        Nhap,
+        DangHopChuan,
+        SanSangKyThuat,
+        DaDuaVoSanXuat,
+        DaHoanThanh,
         DeNghiHuy = 98,
         DaHuy = 99
     }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constraints.cs" />
     <Compile Include="Enums\DonViTinhClick.cs" />
     <Compile Include="Enums\MauIn.cs" />
     <Compile Include="Enums\MucUuTien.cs" />

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.locBaiInDataFilter = new Telerik.WinControls.UI.RadDataFilter();
@@ -115,7 +115,7 @@
             // 
             // 
             // 
-            this.baiInRGridView.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.baiInRGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.baiInRGridView.Name = "baiInRGridView";
             this.baiInRGridView.Size = new System.Drawing.Size(380, 366);
             this.baiInRGridView.TabIndex = 2;
@@ -127,6 +127,7 @@
             this.taoBaiInRButton.Size = new System.Drawing.Size(110, 24);
             this.taoBaiInRButton.TabIndex = 10;
             this.taoBaiInRButton.Text = "Tạo Bài In";
+            this.taoBaiInRButton.Click += new System.EventHandler(this.taoBaiInRButton_Click);
             // 
             // titleRLabel
             // 

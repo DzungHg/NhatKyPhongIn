@@ -15,5 +15,14 @@ namespace NhatKyPhongIn.WFUI
         {
             InitializeComponent();
         }
+
+        private void taoBaiInRButton_Click(object sender, EventArgs e)
+        {
+            var frm = new TaoBaiInForm();
+            frm.MaximizeBox = false;
+            frm.MinimizeBox = false;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.ShowDialog();
+        }
     }
 }

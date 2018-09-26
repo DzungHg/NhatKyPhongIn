@@ -68,6 +68,8 @@
             this.thoiHanInXongRDateTime = new Telerik.WinControls.UI.RadDateTimePicker();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
             this.duongDanFileKHRTextBox = new Telerik.WinControls.UI.RadTextBoxControl();
+            this.layBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
+            this.xemBaiSanPhamRButton = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.titleRLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenBaiInRTextBox)).BeginInit();
@@ -108,12 +110,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.thoiHanInXongRDateTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFileKHRTextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layBaiSanPhamRButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xemBaiSanPhamRButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radLabel1
             // 
-            this.radLabel1.Location = new System.Drawing.Point(20, 92);
+            this.radLabel1.Location = new System.Drawing.Point(22, 106);
             this.radLabel1.Name = "radLabel1";
             this.radLabel1.Size = new System.Drawing.Size(42, 18);
             this.radLabel1.TabIndex = 7;
@@ -130,21 +134,21 @@
             // 
             // tenBaiInRTextBox
             // 
-            this.tenBaiInRTextBox.Location = new System.Drawing.Point(20, 116);
+            this.tenBaiInRTextBox.Location = new System.Drawing.Point(22, 130);
             this.tenBaiInRTextBox.Name = "tenBaiInRTextBox";
             this.tenBaiInRTextBox.Size = new System.Drawing.Size(236, 20);
             this.tenBaiInRTextBox.TabIndex = 2;
             // 
             // soDonHangRTextBox
             // 
-            this.soDonHangRTextBox.Location = new System.Drawing.Point(20, 66);
+            this.soDonHangRTextBox.Location = new System.Drawing.Point(70, 80);
             this.soDonHangRTextBox.Name = "soDonHangRTextBox";
-            this.soDonHangRTextBox.Size = new System.Drawing.Size(236, 20);
+            this.soDonHangRTextBox.Size = new System.Drawing.Size(188, 20);
             this.soDonHangRTextBox.TabIndex = 1;
             // 
             // radLabel2
             // 
-            this.radLabel2.Location = new System.Drawing.Point(20, 42);
+            this.radLabel2.Location = new System.Drawing.Point(22, 80);
             this.radLabel2.Name = "radLabel2";
             this.radLabel2.Size = new System.Drawing.Size(42, 18);
             this.radLabel2.TabIndex = 14;
@@ -152,7 +156,7 @@
             // 
             // radLabel3
             // 
-            this.radLabel3.Location = new System.Drawing.Point(20, 142);
+            this.radLabel3.Location = new System.Drawing.Point(22, 156);
             this.radLabel3.Name = "radLabel3";
             this.radLabel3.Size = new System.Drawing.Size(50, 18);
             this.radLabel3.TabIndex = 8;
@@ -160,14 +164,14 @@
             // 
             // dienGiaiRTextBoxCtrl
             // 
-            this.dienGiaiRTextBoxCtrl.Location = new System.Drawing.Point(20, 166);
+            this.dienGiaiRTextBoxCtrl.Location = new System.Drawing.Point(22, 180);
             this.dienGiaiRTextBoxCtrl.Name = "dienGiaiRTextBoxCtrl";
             this.dienGiaiRTextBoxCtrl.Size = new System.Drawing.Size(301, 61);
             this.dienGiaiRTextBoxCtrl.TabIndex = 3;
             // 
             // tenNguoiLamFileRTextBox
             // 
-            this.tenNguoiLamFileRTextBox.Location = new System.Drawing.Point(20, 257);
+            this.tenNguoiLamFileRTextBox.Location = new System.Drawing.Point(22, 271);
             this.tenNguoiLamFileRTextBox.Name = "tenNguoiLamFileRTextBox";
             this.tenNguoiLamFileRTextBox.Size = new System.Drawing.Size(236, 20);
             this.tenNguoiLamFileRTextBox.TabIndex = 4;
@@ -175,7 +179,7 @@
             // 
             // radLabel4
             // 
-            this.radLabel4.Location = new System.Drawing.Point(20, 233);
+            this.radLabel4.Location = new System.Drawing.Point(22, 247);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(77, 18);
             this.radLabel4.TabIndex = 17;
@@ -183,7 +187,7 @@
             // 
             // radLabel5
             // 
-            this.radLabel5.Location = new System.Drawing.Point(20, 283);
+            this.radLabel5.Location = new System.Drawing.Point(22, 297);
             this.radLabel5.Name = "radLabel5";
             this.radLabel5.Size = new System.Drawing.Size(40, 18);
             this.radLabel5.TabIndex = 18;
@@ -191,21 +195,21 @@
             // 
             // mayInDropDownList
             // 
-            this.mayInDropDownList.Location = new System.Drawing.Point(20, 307);
+            this.mayInDropDownList.Location = new System.Drawing.Point(22, 321);
             this.mayInDropDownList.Name = "mayInDropDownList";
             this.mayInDropDownList.Size = new System.Drawing.Size(236, 20);
             this.mayInDropDownList.TabIndex = 5;
             // 
             // toChayRongRTextBox
             // 
-            this.toChayRongRTextBox.Location = new System.Drawing.Point(20, 357);
+            this.toChayRongRTextBox.Location = new System.Drawing.Point(22, 371);
             this.toChayRongRTextBox.Name = "toChayRongRTextBox";
             this.toChayRongRTextBox.Size = new System.Drawing.Size(77, 20);
             this.toChayRongRTextBox.TabIndex = 6;
             // 
             // radLabel6
             // 
-            this.radLabel6.Location = new System.Drawing.Point(20, 333);
+            this.radLabel6.Location = new System.Drawing.Point(22, 347);
             this.radLabel6.Name = "radLabel6";
             this.radLabel6.Size = new System.Drawing.Size(74, 18);
             this.radLabel6.TabIndex = 20;
@@ -213,7 +217,7 @@
             // 
             // radLabel7
             // 
-            this.radLabel7.Location = new System.Drawing.Point(115, 333);
+            this.radLabel7.Location = new System.Drawing.Point(117, 347);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Size = new System.Drawing.Size(64, 18);
             this.radLabel7.TabIndex = 21;
@@ -221,14 +225,14 @@
             // 
             // toChayDaiRTextBox
             // 
-            this.toChayDaiRTextBox.Location = new System.Drawing.Point(115, 357);
+            this.toChayDaiRTextBox.Location = new System.Drawing.Point(117, 371);
             this.toChayDaiRTextBox.Name = "toChayDaiRTextBox";
             this.toChayDaiRTextBox.Size = new System.Drawing.Size(77, 20);
             this.toChayDaiRTextBox.TabIndex = 7;
             // 
             // radLabel8
             // 
-            this.radLabel8.Location = new System.Drawing.Point(198, 357);
+            this.radLabel8.Location = new System.Drawing.Point(200, 371);
             this.radLabel8.Name = "radLabel8";
             this.radLabel8.Size = new System.Drawing.Size(58, 18);
             this.radLabel8.TabIndex = 22;
@@ -422,11 +426,30 @@
             this.duongDanFileKHRTextBox.Size = new System.Drawing.Size(301, 37);
             this.duongDanFileKHRTextBox.TabIndex = 15;
             // 
+            // layBaiSanPhamRButton
+            // 
+            this.layBaiSanPhamRButton.Location = new System.Drawing.Point(22, 50);
+            this.layBaiSanPhamRButton.Name = "layBaiSanPhamRButton";
+            this.layBaiSanPhamRButton.Size = new System.Drawing.Size(110, 24);
+            this.layBaiSanPhamRButton.TabIndex = 51;
+            this.layBaiSanPhamRButton.Text = "Lấy Bài Sản Phẩm";
+            this.layBaiSanPhamRButton.Click += new System.EventHandler(this.layBaiSanPhamRButton_Click);
+            // 
+            // xemBaiSanPhamRButton
+            // 
+            this.xemBaiSanPhamRButton.Location = new System.Drawing.Point(148, 50);
+            this.xemBaiSanPhamRButton.Name = "xemBaiSanPhamRButton";
+            this.xemBaiSanPhamRButton.Size = new System.Drawing.Size(110, 24);
+            this.xemBaiSanPhamRButton.TabIndex = 52;
+            this.xemBaiSanPhamRButton.Text = "Xem Bài Sản Phẩm";
+            // 
             // TaoBaiInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 456);
+            this.Controls.Add(this.xemBaiSanPhamRButton);
+            this.Controls.Add(this.layBaiSanPhamRButton);
             this.Controls.Add(this.radLabel19);
             this.Controls.Add(this.duongDanFileKHRTextBox);
             this.Controls.Add(this.thoiHanInXongRDateTime);
@@ -513,6 +536,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.thoiHanInXongRDateTime)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.duongDanFileKHRTextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layBaiSanPhamRButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xemBaiSanPhamRButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -561,5 +586,7 @@
         private Telerik.WinControls.UI.RadDateTimePicker thoiHanInXongRDateTime;
         private Telerik.WinControls.UI.RadLabel radLabel19;
         private Telerik.WinControls.UI.RadTextBoxControl duongDanFileKHRTextBox;
+        private Telerik.WinControls.UI.RadButton layBaiSanPhamRButton;
+        private Telerik.WinControls.UI.RadButton xemBaiSanPhamRButton;
     }
 }

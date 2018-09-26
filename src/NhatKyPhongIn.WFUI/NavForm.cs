@@ -43,5 +43,11 @@ namespace NhatKyPhongIn.WFUI
             var frm = new QuanLyMayInKTSForm();
             frm.ShowDialog();
         }
+
+        private void quanLyBaiInRButton_Click(object sender, EventArgs e)
+        {
+            var frm = new BangDieuKhienBaiInForm();
+            frm.ShowDialog();
+        }
     }
 }
