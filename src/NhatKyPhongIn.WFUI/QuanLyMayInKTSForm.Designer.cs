@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition3 = new Telerik.WinControls.UI.TableViewDefinition();
             this.container01RSplit = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.locMayInDataFilter = new Telerik.WinControls.UI.RadDataFilter();
@@ -71,6 +71,7 @@
             // splitPanel1
             // 
             this.splitPanel1.Controls.Add(this.locMayInDataFilter);
+            this.splitPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.splitPanel1.Location = new System.Drawing.Point(0, 0);
             this.splitPanel1.Name = "splitPanel1";
             // 
@@ -91,10 +92,12 @@
             this.locMayInDataFilter.Name = "locMayInDataFilter";
             this.locMayInDataFilter.Size = new System.Drawing.Size(241, 366);
             this.locMayInDataFilter.TabIndex = 1;
+            this.locMayInDataFilter.Resize += new System.EventHandler(this.locMayInDataFilter_Resize);
             // 
             // splitPanel2
             // 
             this.splitPanel2.Controls.Add(this.mayInRGridView);
+            this.splitPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitPanel2.Location = new System.Drawing.Point(245, 0);
             this.splitPanel2.Name = "splitPanel2";
             // 
@@ -115,7 +118,7 @@
             // 
             // 
             // 
-            this.mayInRGridView.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.mayInRGridView.MasterTemplate.ViewDefinition = tableViewDefinition3;
             this.mayInRGridView.Name = "mayInRGridView";
             this.mayInRGridView.ReadOnly = true;
             this.mayInRGridView.Size = new System.Drawing.Size(380, 366);
@@ -172,6 +175,7 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "Quản lý Máy in";
+            this.ResizeEnd += new System.EventHandler(this.QuanLyMayInKTSForm_ResizeEnd);
             this.Resize += new System.EventHandler(this.QuanLyMayInKTSForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.container01RSplit)).EndInit();
             this.container01RSplit.ResumeLayout(false);

@@ -47,12 +47,19 @@ namespace NhatKyPhongIn.WFUI
 
             themMayInRButton.Top = titleRLabel.Top + titleRLabel.Height + 8;
             suaMayInRButton.Top = themMayInRButton.Top;
-
+            
             container01RSplit.Width = this.ClientSize.Width - 8;
-            container01RSplit.Height = this.ClientSize.Height - titleRLabel.Top - titleRLabel.Height - 4 - dongFormRButton.Top - 8;
+            container01RSplit.Height = this.ClientSize.Height  - (themMayInRButton.Top + themMayInRButton.Height + 8) - 
+                (dongFormRButton.Height * 2 );
+            
             container01RSplit.Left = 4;
             container01RSplit.Top = themMayInRButton.Top + themMayInRButton.Height + 4;
-
+            //Di chuyen nut đong form
+            dongFormRButton.Left = (ClientSize.Width - dongFormRButton.Width) / 2;
+            dongFormRButton.Top = container01RSplit.Top + container01RSplit.Height + 8;
+            //Di chuyển nút thêm sửa
+            themMayInRButton.Left = splitPanel1.Width + 8;
+            suaMayInRButton.Left = themMayInRButton.Left + themMayInRButton.Width + 8;
         }
 
         private void suaMayInRButton_Click(object sender, EventArgs e)
@@ -71,6 +78,20 @@ namespace NhatKyPhongIn.WFUI
                     DauNoiDuLieu();
                 }
             }
+        }
+
+        private void QuanLyMayInKTSForm_ResizeEnd(object sender, EventArgs e)
+        {
+            splitPanel1.Width = 250; //Chưa được
+        }
+
+        private void locMayInDataFilter_Resize(object sender, EventArgs e)
+        {
+            //Di chuyển nút thêm sửa
+            themMayInRButton.Left = splitPanel1.Width + 8;
+            suaMayInRButton.Left = themMayInRButton.Left + themMayInRButton.Width + 8;
+            //splitPanel1.Width = container01RSplit.Width / 4;
+            //splitPanel2.Width = 3*(container01RSplit.Width / 4);
         }
     }
 }

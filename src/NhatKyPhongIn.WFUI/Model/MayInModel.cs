@@ -11,6 +11,10 @@ namespace NhatKyPhongIn.WFUI.Model
         public int Id { get; set; }
         public string TenMayIn { get; set; }
         public string MaMayIn { get; set; }
+        public string MaMayTenMay
+        {
+            get { return $"{this.MaMayIn} ({this.TenMayIn})"; }
+        }
         public string MoTa { get; set; }
         public string DonViDemClick { get; set; } //A4, m2
         public bool NgungHoatDong { get; set; }
