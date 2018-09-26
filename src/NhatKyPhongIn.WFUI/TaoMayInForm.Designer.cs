@@ -123,6 +123,7 @@
             // 
             // donViDemClickSPDropDownList
             // 
+            this.donViDemClickSPDropDownList.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.donViDemClickSPDropDownList.Location = new System.Drawing.Point(106, 232);
             this.donViDemClickSPDropDownList.Name = "donViDemClickSPDropDownList";
             this.donViDemClickSPDropDownList.Size = new System.Drawing.Size(127, 20);

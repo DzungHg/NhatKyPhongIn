@@ -33,6 +33,7 @@ namespace NhatKyPhongIn.WFUI
             frm.TinhTrangForm = Common.Enums.TinhTrangForm.Them;
             frm.MaximizeBox = false;
             frm.MinimizeBox = false;
+            frm.StartPosition = FormStartPosition.CenterParent;
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK)
             {
@@ -72,6 +73,7 @@ namespace NhatKyPhongIn.WFUI
                 frm.MayInEdited = model;
                 frm.MaximizeBox = false;
                 frm.MinimizeBox = false;
+                frm.StartPosition = FormStartPosition.CenterParent;
                 frm.ShowDialog();
                 if (frm.DialogResult == DialogResult.OK)
                 {

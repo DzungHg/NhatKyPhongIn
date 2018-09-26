@@ -96,14 +96,23 @@ namespace NhatKyPhongIn.WFUI
 
         private void TaoMayInForm_Load(object sender, EventArgs e)
         {
-            if (this.TinhTrangForm == TinhTrangForm.Sua)
+            switch (this.TinhTrangForm)
             {
-                tenMayInRTextBox.Text = this.MayInEdited.TenMayIn;
-                maMayInRTextBox.Text = this.MayInEdited.MaMayIn;
-                moTaRTextBoxCtrl.Text = this.MayInEdited.MoTa;
-                donViDemClickSPDropDownList.Text = this.MayInEdited.DonViDemClick;
-                thuTuSapXemRTextBox.Text = this.MayInEdited.ThuTuSapXep.ToString();
-                ngungHoatDongCheckBox.Checked = this.MayInEdited.NgungHoatDong;
+
+                case TinhTrangForm.Sua:
+                    tieuDeFormRLabel.Text = $"SỬA MÁY IN [ID: {this.MayInEdited.Id}]";
+                    tieuDeFormRLabel.Left = (this.ClientSize.Width - tieuDeFormRLabel.Width) / 2;
+                    tenMayInRTextBox.Text = this.MayInEdited.TenMayIn;
+                    maMayInRTextBox.Text = this.MayInEdited.MaMayIn;
+                    moTaRTextBoxCtrl.Text = this.MayInEdited.MoTa;
+                    donViDemClickSPDropDownList.Text = this.MayInEdited.DonViDemClick;
+                    thuTuSapXemRTextBox.Text = this.MayInEdited.ThuTuSapXep.ToString();
+                    ngungHoatDongCheckBox.Checked = this.MayInEdited.NgungHoatDong;
+                    break;
+                case TinhTrangForm.Them:
+
+                    tieuDeFormRLabel.Left = (this.ClientSize.Width - tieuDeFormRLabel.Width) / 2;
+                    break;
 
             }
         }

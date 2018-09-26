@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOContext\BaiInContext.cs" />
     <Compile Include="DTOContext\MayIn.cs" />
     <Compile Include="QuanLyMayInKTSForm.cs">
       <SubType>Form</SubType>

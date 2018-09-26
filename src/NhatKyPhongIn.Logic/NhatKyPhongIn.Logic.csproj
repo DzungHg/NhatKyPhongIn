@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaiInLogic.cs" />
     <Compile Include="MayInLogic.cs" />
     <Compile Include="BaiSanPhamLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

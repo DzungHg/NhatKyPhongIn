@@ -11,7 +11,7 @@ namespace NhatKyPhongIn.DAL.IReposNhatKyPhongIn
     {
 
         IEnumerable<BaiInBDO> DocTatCa();
-
+        IEnumerable<BaiInBDO> DocTheoTinhTrangBaiIn(string tinhTrang);
         BaiInBDO DocTheoId(int id);
         void Them(BaiInBDO entityBDO);
         void Sua(BaiInBDO entityBDO);

@@ -36,6 +36,16 @@ namespace NhatKyPhongIn.DAL
             }
         }
 
+        public IEnumerable<BaiInBDO> DocTheoTinhTrangBaiIn(string tinhTrang)
+        {
+            IEnumerable<BaiInBDO> output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(tenDB)))
+            {
+                output = connection.Query<BaiInBDO>("dbo.spBaiIn_TinhTrang", tinhTrang);
+                return output;
+            }
+        }
+
         public void Sua(BaiInBDO entityBDO)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.CnnString(tenDB)))
